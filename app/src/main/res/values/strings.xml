@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Search</string>
+    <string-array name="rooms">
+        <item>Kitchen</item>
+        <item>
+            Bedroom
+        </item>
+        <item>Toilet</item>
+    </string-array>
+</resources>
