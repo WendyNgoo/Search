@@ -47,15 +47,15 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view,int position, long l) {
                 String i = String.valueOf(adapter.getItem(position));
                 Toast.makeText(MainActivity.this,i, Toast.LENGTH_SHORT).show();
-                if (position == 0){
+                if (i.equals("Kitchen")){
                     Intent intent = new Intent(view.getContext(),Main2Activity.class);
                     startActivityForResult(intent,0);
                 }
-                if (position == 1){
+                if (i.equals("Bedroom")){
                     Intent intent = new Intent(view.getContext(),Main3Activity.class);
                     startActivityForResult(intent,1);
                 }
-                if (position == 2){
+                if (i.equals("Toilet")){
                     Intent intent = new Intent(view.getContext(),Main2Activity.class);
                     startActivityForResult(intent,2);
                 }
